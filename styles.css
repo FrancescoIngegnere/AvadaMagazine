@@ -1,0 +1,99 @@
+/* google font Manrope */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    /* font page */
+    font-family: 'Manrope', sans-serif;
+
+    /* color page */
+    --bg-navBarSecondary: #45505A;
+    --bg-sitePrimary: #FFFFFF;
+    --bg-siteSecondary: #EFF3F5;
+    --bg-siteFooter: #191D21;
+    
+    /* color details */
+    --bg-siteDetailsPrimary: #FF6D20;
+    --bg-siteDetailsSecondary: #63717F;
+
+    /* color text */
+    --color-textPrimary: #191D21;
+    --color-textSecondary: #FFFFFF;
+    --color-textTertiary: #63717F;
+}
+
+body{
+    background-color: var(--bg-siteSecondary);
+}
+
+/* nav bar nera */
+.navBarSecondary {
+    background-color: var(--bg-navBarSecondary);
+    color: var(--color-textSecondary);
+    font-size: 1rem;
+}
+
+    .navBarSecondary i{
+        color: var(--color-textTertiary);
+        font-size: 1.2rem;
+    }
+
+    .navBarSecondary i:hover{
+        color: var(--bg-siteDetailsPrimary);
+    }
+
+/* nav bar bianca principale */
+.navBarPrimary{
+    background-color: var(--bg-sitePrimary);
+    box-shadow: 0.2rem 0.2rem 0.5rem var(--bg-navBarSecondary);
+    position: fixed;
+}
+
+.menuNavPrimary li a{
+    color: var(--color-textPrimary);
+    font-size: 1.2rem;
+}
+
+    .menuNavPrimary li a:hover{
+        color: var(--bg-siteDetailsPrimary);
+        border-top: 1px solid var(--bg-siteDetailsPrimary);
+    }
+
+.buttonSearch{
+    background-color: var(--bg-siteDetailsPrimary);
+    color: var(--color-textSecondary);
+}
+
+    .buttonSearch:hover{
+        background-color: var(--bg-navBarSecondary);
+    }
+
+.buttonMenu{
+    background-color: var(--bg-siteDetailsSecondary);
+    color: var(--color-textSecondary);
+}
+
+    .buttonMenu:hover{
+        background-color: black;
+
+    }
+
+.socialHam i{
+    background-color: var(--bg-siteDetailsSecondary);
+    color: var(--color-textPrimary);
+    border-radius: 50%;
+}
+
+    .socialHam i:hover{
+        background-color: var(--bg-siteDetailsPrimary);
+        color: var(--color-textSecondary);
+    }
+
+
+
+
+
+/*  | //
+   ( @ @ )
+ooO__(_)__Ooo
+٩(͡๏̯͡๏)۶
+ */

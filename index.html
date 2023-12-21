@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Avada Magazine</title>
+        <!-- copia sito https://avada.website/magazine/ -->
+
+        <!-- style BS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+        <!-- Font Awesome  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- personal style -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <!-- navBar dark a scomparsa per smartphone -->
+        <nav class="container-fluid d-none d-md-block navBarSecondary py-3">
+            <div class="container-md d-flex justify-content-between">
+                <p class="m-0">Welcome to Avada Magazine! Today is : July 8, 2023</p> 
+                <div>
+                     <i class="fa-brands fa-facebook-f px-2"></i>
+                     <i class="fa-brands fa-twitter px-2"></i>
+                     <i class="fa-brands fa-instagram px-2"></i>
+                     <i class="fa-brands fa-pinterest-p px-2"></i>
+                     <i class="fa-brands fa-telegram px-2"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- navBar white logo e hamburger -->
+        <nav class="navbar container-fluid navBarPrimary">
+
+            <!-- contenitore logo e bottoni search e menu -->
+            <div class="container-md flex-nowrap">
+
+                <!-- logo -->
+                <a class="navbar-brand" href="#"><img src="https://avada.website/magazine/wp-content/uploads/sites/166/2023/02/logo-2x-200x44.png" alt="logo" class="img-fluid"></a>
+
+                <div class="d-flex flex-nowrap align-items-center">
+
+                    <!-- sezione navBar a scomparsa in smartphone -->
+                    <div class="d-none d-md-inline-block menuNavPrimary">
+                        <ul class="nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home
+                                </a>
+    
+                                <!-- da stilizzare le varie card -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+    
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categories
+                                </a>
+    
+                                <!-- da stilizzare le varie card -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Post Styles
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Post Style 1</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Post Style 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">News Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+    
+                    </div>
+    
+    
+                    <!-- bottoni search e menu -->
+                    <div class="d-flex flex-nowrap">
+                        <button class="navbar-toggler border-0 rounded-5 p-2 buttonSearch mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-magnifying-glass p-1"></i>
+                        </button>
+                        <button class="navbar-toggler border-0 rounded-5 p-2  buttonMenu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars p-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- contenitore menu a comparsa -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+                    <!-- bottone x di chiusura -->
+                    <button type="button" class="btn-close ms-auto p-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+
+                    <div class="offcanvas-body">
+
+                        <!-- intestazione sezione menu -->
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Main Menu</h5>
+                            <hr class="w-50">
+                        </div>
+
+                        <!-- sezione menu -->
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mx-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Home Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Default Home</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Alternate Home 1</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Alternate Home 2</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Home Masonry</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Categories</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Post Styles
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Post Style 1</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Post Style 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    
+
+                        <!-- intestazione sezione post -->
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Recent Posts</h5>
+                            <hr class="w-50">
+                        </div>
+
+                        <!-- sezione post -->
+                        <div class="d-flex flex-column mx-3">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="https://avada.website/magazine/wp-content/uploads/sites/166/2023/02/high-altitude-balloons-200x120.jpg" alt="mongolfiera che vola" class="img-fluid">
+                                </div>
+                                <div class="col-8">
+                                    <h6>Hot Air Ballooning As An Alternative Means Of Travel</h6>
+                                    <p>Categories: <span>World</span></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="https://avada.website/magazine/wp-content/uploads/sites/166/2023/02/vpn-security-future-200x120.jpg" alt="smatphone su scrivania" class="img-fluid">
+                                </div>
+                                <div class="col-8">
+                                    <h6>VPN Security & Its Role In The Future Of Data Encryption</h6>
+                                    <p>Categories: <span>Security</span></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="https://avada.website/magazine/wp-content/uploads/sites/166/2023/02/global-politics-200x120.jpg" alt="campidoglio" class="img-fluid">
+                                </div>
+                                <div class="col-8">
+                                    <h6>Exploring The Global Trends In Politics & Their Impact</h6>
+                                    <p>Categories: <span>Politics</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- intestazione sezione contact -->
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Get Connected</h5>
+                            <hr class="w-50">
+                        </div>
+
+                        <!-- sezione contact -->
+                        <div class="d-flex justify-content-around mb-5 mt-3 socialHam">
+                            <i class="fa-brands fa-facebook-f p-3"></i>
+                            <i class="fa-brands fa-twitter p-3"></i>
+                            <i class="fa-brands fa-instagram p-3"></i>
+                            <i class="fa-brands fa-pinterest-p p-3"></i>
+                            <i class="fa-brands fa-telegram p-3"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container-md">
+            <div class="d-none d-md-flex">
+                
+            </div>
+
+        </main>
+
+        
+        
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+<!-- 
+    | //
+   ( @ @ )
+ooO__(_)__Ooo
+٩(͡๏̯͡๏)۶
+ -->
